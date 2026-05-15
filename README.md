@@ -1,8 +1,8 @@
-# Limrun Detox Expo Sample
+# Limrun Expo Test App
 
-This is a small Expo Go app built for the Limrun Detox example. It exposes stable
-React Native `testID`s so Detox can drive a visible end-to-end flow on a Limrun
-remote iOS simulator.
+This is a small Expo Go app built for Limrun automated testing examples. It
+exposes stable React Native `testID`s so frameworks like Detox and Maestro can
+drive a visible end-to-end flow on a Limrun remote iOS simulator.
 
 ## Run With Expo Go
 
@@ -11,12 +11,13 @@ npm install
 npm run tunnel
 ```
 
-Copy the `exp://` tunnel URL from Expo CLI and use it as `EXPO_URL` in
-`typescript-sdk/examples/detox-ios`.
+Copy the `exp://` tunnel URL from Expo CLI and use it as `EXPO_URL` in a
+Limrun TypeScript SDK example such as `examples/detox-ios` or
+`examples/maestro-ios`.
 
 Tunnel support is included through the local `@expo/ngrok` dev dependency.
 
-## Detox Test Contract
+## Test Contract
 
 The Limrun example expects these stable selectors:
 
@@ -35,6 +36,7 @@ The Limrun example expects these stable selectors:
 - `demo-success-message`
 - `demo-reset-button`
 
-It also asserts the visible text `Limrun Detox Demo` and `Hello, Limrun!`.
+Examples also assert the visible text `Limrun Expo Test App`,
+`Hello, Limrun!`, and `Success: Limrun completed the automated test flow.`
 
 The app intentionally avoids custom native modules so it can run inside Expo Go.

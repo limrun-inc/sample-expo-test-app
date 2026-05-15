@@ -1,5 +1,5 @@
 {
-  "name": "sample-detox-with-expo",
+  "name": "sample-expo-test-app",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {

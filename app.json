@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "sample-detox-with-expo",
-    "slug": "sample-detox-with-expo",
+    "name": "sample-expo-test-app",
+    "slug": "sample-expo-test-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

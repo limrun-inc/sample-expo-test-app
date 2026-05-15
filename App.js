@@ -21,7 +21,7 @@ export default function App() {
   const [done, setDone] = useState(false);
 
   const submitName = () => {
-    setSubmittedName(name.trim() || 'Detox');
+    setSubmittedName(name.trim() || 'Tester');
     Keyboard.dismiss();
   };
 
@@ -46,13 +46,13 @@ export default function App() {
               <Text style={styles.eyebrow}>Step 2</Text>
               <Text style={styles.title}>Remote simulator actions</Text>
               <Text style={styles.body}>
-                Detox is now driving Expo Go on a Limrun iOS simulator through the Limrun Detox runtime.
+                An automated test is now driving Expo Go on a Limrun iOS simulator.
               </Text>
 
               <View style={styles.actionCard}>
                 <View>
                   <Text style={styles.rowLabel}>Automation switch</Text>
-                  <Text style={styles.rowSubtext}>Toggle state through Detox</Text>
+                  <Text style={styles.rowSubtext}>Toggle state through the test flow</Text>
                 </View>
                 <Switch
                   testID="demo-automation-switch"
@@ -75,7 +75,7 @@ export default function App() {
 
               {success ? (
                 <Text testID="demo-success-message" style={styles.success}>
-                  Success: Limrun Detox completed the demo flow.
+                  Success: Limrun completed the automated test flow.
                 </Text>
               ) : (
                 <Text style={styles.hint}>Turn on the switch and complete the checklist.</Text>
@@ -99,11 +99,11 @@ export default function App() {
           <View style={styles.card}>
             <Text style={styles.eyebrow}>Limrun sample app</Text>
             <Text testID="demo-home-title" style={styles.title}>
-              Limrun Detox Demo
+              Limrun Expo Test App
             </Text>
             <Text style={styles.body}>
-              A tiny Expo Go app built to show Detox tapping, typing, asserting, navigating, and capturing
-              screenshots on a remote iOS simulator.
+              A tiny Expo Go app built to show automated testing frameworks tapping, typing, asserting,
+              navigating, and capturing screenshots on a remote iOS simulator.
             </Text>
 
             <View style={styles.counterPanel}>
